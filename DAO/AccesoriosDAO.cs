@@ -7,7 +7,7 @@ using DTO;
 
 namespace DAO
 {
-    public class AccesoriosDAO
+    public class AccesoriosDAO : DAOBase<Accesorios>
     {
         public void Crear(Accesorios accesorio)
         {
