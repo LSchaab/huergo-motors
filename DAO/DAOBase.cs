@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Globalization;
 using System.Reflection;
 using DTO;
 
@@ -22,7 +23,7 @@ namespace DAO
 
                 IEnumerable<PropertyInfo> propiedades = typeof(T).GetProperties().Where(p => p.CanWrite);
 
-                using (SqlConnection conexion = new SqlConnection(DAOHelpers.dbString))
+                using (SqlConnection conexion = new SqlConnection(DAOHelper.dbString))
                 {
                     conexion.Open();
 
@@ -39,7 +40,7 @@ namespace DAO
                             parametros += $"@{propiedad.Name},";
 
                             object valor = propiedad.GetValue(dto, null);
-                            cmd.Parameters.AddWithValue($"@{propiedad.Name}", valor);
+                            cmd.Parameters.AddWithValue($"@{propiedad.Name}", Convert.ToString(valor, CultureInfo.InvariantCulture));
                         }
 
                         campos = campos.TrimEnd(',');
@@ -67,7 +68,7 @@ namespace DAO
 
                 string query = $"DELETE FROM {tabla} WHERE Id={id}";
 
-                using (SqlConnection conexion = new SqlConnection(DAOHelpers.dbString))
+                using (SqlConnection conexion = new SqlConnection(DAOHelper.dbString))
                 {
                     conexion.Open();
                     SqlCommand cmd = new SqlCommand(query, conexion);
@@ -92,7 +93,7 @@ namespace DAO
 
                 object id = null;
 
-                using (SqlConnection conexion = new SqlConnection(DAOHelpers.dbString))
+                using (SqlConnection conexion = new SqlConnection(DAOHelper.dbString))
                 {
                     conexion.Open();
 
@@ -105,10 +106,11 @@ namespace DAO
                                 id = propiedad.GetValue(dto, null);
                                 continue;
                             }
+
                             camposValores += $"{propiedad.Name} = @{propiedad.Name},";
 
                             object valor = propiedad.GetValue(dto, null);
-                            cmd.Parameters.AddWithValue($"@{propiedad.Name}", valor);
+                            cmd.Parameters.AddWithValue($"@{propiedad.Name}", Convert.ToString(valor, CultureInfo.InvariantCulture));
                         }
 
                         camposValores = camposValores.TrimEnd(',');
@@ -139,7 +141,7 @@ namespace DAO
 
                 string query = $"SELECT * FROM {tabla} WHERE Id={id}";
 
-                using (SqlDataAdapter da = new SqlDataAdapter(query, DAOHelpers.dbString))
+                using (SqlDataAdapter da = new SqlDataAdapter(query, DAOHelper.dbString))
                 {
                     da.Fill(dt);
                 }
@@ -190,7 +192,7 @@ namespace DAO
 
                 string query = $"SELECT * FROM {tabla} WHERE {campos}";
 
-                using (SqlDataAdapter da = new SqlDataAdapter(query, DAOHelpers.dbString))
+                using (SqlDataAdapter da = new SqlDataAdapter(query, DAOHelper.dbString))
                 {
                     da.Fill(dt);
                 }
