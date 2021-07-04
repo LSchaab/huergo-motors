@@ -1,7 +1,7 @@
 ﻿
-namespace DesktopUI.FormClientes
+namespace DesktopUI.FormVendedores
 {
-    partial class FormClientesAgregar
+    partial class FormVendedoresModificar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,15 @@ namespace DesktopUI.FormClientes
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxEmail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.BtConfirmar = new System.Windows.Forms.Button();
             this.BtCancelar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TxTelefono = new System.Windows.Forms.TextBox();
-            this.TxDireccion = new System.Windows.Forms.TextBox();
+            this.TxSucursal = new System.Windows.Forms.TextBox();
+            this.TxApellido = new System.Windows.Forms.TextBox();
             this.TxNombre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // TxEmail
-            // 
-            this.TxEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxEmail.Location = new System.Drawing.Point(91, 87);
-            this.TxEmail.Name = "TxEmail";
-            this.TxEmail.Size = new System.Drawing.Size(243, 20);
-            this.TxEmail.TabIndex = 120;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 14);
-            this.label5.TabIndex = 119;
-            this.label5.Text = "Email";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtConfirmar
             // 
@@ -70,10 +47,10 @@ namespace DesktopUI.FormClientes
             this.BtConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtConfirmar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtConfirmar.ForeColor = System.Drawing.Color.White;
-            this.BtConfirmar.Location = new System.Drawing.Point(249, 114);
+            this.BtConfirmar.Location = new System.Drawing.Point(247, 92);
             this.BtConfirmar.Name = "BtConfirmar";
             this.BtConfirmar.Size = new System.Drawing.Size(85, 25);
-            this.BtConfirmar.TabIndex = 118;
+            this.BtConfirmar.TabIndex = 124;
             this.BtConfirmar.Text = "Confirmar";
             this.BtConfirmar.UseVisualStyleBackColor = false;
             this.BtConfirmar.Click += new System.EventHandler(this.BtConfirmar_Click);
@@ -87,10 +64,10 @@ namespace DesktopUI.FormClientes
             this.BtCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtCancelar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtCancelar.Location = new System.Drawing.Point(158, 113);
+            this.BtCancelar.Location = new System.Drawing.Point(156, 92);
             this.BtCancelar.Name = "BtCancelar";
             this.BtCancelar.Size = new System.Drawing.Size(85, 25);
-            this.BtCancelar.TabIndex = 117;
+            this.BtCancelar.TabIndex = 123;
             this.BtCancelar.Text = "Cancelar";
             this.BtCancelar.UseVisualStyleBackColor = false;
             this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
@@ -101,11 +78,11 @@ namespace DesktopUI.FormClientes
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 61);
+            this.label3.Location = new System.Drawing.Point(14, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 14);
-            this.label3.TabIndex = 116;
-            this.label3.Text = "Telefono";
+            this.label3.TabIndex = 122;
+            this.label3.Text = "Sucursal";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -114,11 +91,11 @@ namespace DesktopUI.FormClientes
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 35);
+            this.label2.Location = new System.Drawing.Point(14, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 14);
-            this.label2.TabIndex = 115;
-            this.label2.Text = "Direccion";
+            this.label2.Size = new System.Drawing.Size(60, 14);
+            this.label2.TabIndex = 121;
+            this.label2.Text = "Apellido";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -127,59 +104,58 @@ namespace DesktopUI.FormClientes
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(14, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 14);
-            this.label1.TabIndex = 114;
+            this.label1.TabIndex = 120;
             this.label1.Text = "Nombre";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxTelefono
+            // TxSucursal
             // 
-            this.TxTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxTelefono.Location = new System.Drawing.Point(91, 61);
-            this.TxTelefono.Name = "TxTelefono";
-            this.TxTelefono.Size = new System.Drawing.Size(243, 20);
-            this.TxTelefono.TabIndex = 113;
+            this.TxSucursal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TxSucursal.Location = new System.Drawing.Point(79, 65);
+            this.TxSucursal.Name = "TxSucursal";
+            this.TxSucursal.Size = new System.Drawing.Size(253, 20);
+            this.TxSucursal.TabIndex = 119;
             // 
-            // TxDireccion
+            // TxApellido
             // 
-            this.TxDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxDireccion.Location = new System.Drawing.Point(91, 35);
-            this.TxDireccion.Name = "TxDireccion";
-            this.TxDireccion.Size = new System.Drawing.Size(243, 20);
-            this.TxDireccion.TabIndex = 112;
+            this.TxApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TxApellido.Location = new System.Drawing.Point(79, 39);
+            this.TxApellido.Name = "TxApellido";
+            this.TxApellido.Size = new System.Drawing.Size(253, 20);
+            this.TxApellido.TabIndex = 118;
             // 
             // TxNombre
             // 
             this.TxNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxNombre.Location = new System.Drawing.Point(91, 9);
+            this.TxNombre.Location = new System.Drawing.Point(79, 13);
             this.TxNombre.Name = "TxNombre";
-            this.TxNombre.Size = new System.Drawing.Size(243, 20);
-            this.TxNombre.TabIndex = 111;
+            this.TxNombre.Size = new System.Drawing.Size(253, 20);
+            this.TxNombre.TabIndex = 117;
             // 
-            // FormClientesAgregar
+            // FormVendedoresModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(346, 151);
-            this.Controls.Add(this.TxEmail);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(346, 131);
             this.Controls.Add(this.BtConfirmar);
             this.Controls.Add(this.BtCancelar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxTelefono);
-            this.Controls.Add(this.TxDireccion);
+            this.Controls.Add(this.TxSucursal);
+            this.Controls.Add(this.TxApellido);
             this.Controls.Add(this.TxNombre);
-            this.MaximumSize = new System.Drawing.Size(362, 190);
-            this.MinimumSize = new System.Drawing.Size(362, 190);
-            this.Name = "FormClientesAgregar";
+            this.MaximumSize = new System.Drawing.Size(362, 170);
+            this.MinimumSize = new System.Drawing.Size(362, 170);
+            this.Name = "FormVendedoresModificar";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Nuevo Cliente";
+            this.Text = "Modificar Vendedor";
+            this.Load += new System.EventHandler(this.FormVendedoresModificar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,15 +163,13 @@ namespace DesktopUI.FormClientes
 
         #endregion
 
-        private System.Windows.Forms.TextBox TxEmail;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button BtConfirmar;
         private System.Windows.Forms.Button BtCancelar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxTelefono;
-        private System.Windows.Forms.TextBox TxDireccion;
+        private System.Windows.Forms.TextBox TxSucursal;
+        private System.Windows.Forms.TextBox TxApellido;
         private System.Windows.Forms.TextBox TxNombre;
     }
 }

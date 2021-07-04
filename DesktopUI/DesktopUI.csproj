@@ -44,6 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAccesorios\FormAccesoriosAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccesorios\FormAccesoriosAgregar.Designer.cs">
+      <DependentUpon>FormAccesoriosAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccesorios\FormAccesoriosMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccesorios\FormAccesoriosMain.Designer.cs">
+      <DependentUpon>FormAccesoriosMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccesorios\FormAccesoriosModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccesorios\FormAccesoriosModificar.Designer.cs">
+      <DependentUpon>FormAccesoriosModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClientes\FormClientesAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,42 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosAgregar.Designer.cs">
+      <DependentUpon>FormVehiculosAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosMain.Designer.cs">
+      <DependentUpon>FormVehiculosMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehiculos\FormVehiculosModificar.Designer.cs">
+      <DependentUpon>FormVehiculosModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresAgregar.Designer.cs">
+      <DependentUpon>FormVendedoresAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresMain.Designer.cs">
+      <DependentUpon>FormVendedoresMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendedores\FormVendedoresModificar.Designer.cs">
+      <DependentUpon>FormVendedoresModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVentas\FormVentasAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +137,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UiHelper.cs" />
+    <EmbeddedResource Include="FormAccesorios\FormAccesoriosAgregar.resx">
+      <DependentUpon>FormAccesoriosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccesorios\FormAccesoriosMain.resx">
+      <DependentUpon>FormAccesoriosMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccesorios\FormAccesoriosModificar.resx">
+      <DependentUpon>FormAccesoriosModificar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClientes\FormClientesAgregar.resx">
       <DependentUpon>FormClientesAgregar.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +157,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehiculos\FormVehiculosAgregar.resx">
+      <DependentUpon>FormVehiculosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehiculos\FormVehiculosMain.resx">
+      <DependentUpon>FormVehiculosMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehiculos\FormVehiculosModificar.resx">
+      <DependentUpon>FormVehiculosModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendedores\FormVendedoresAgregar.resx">
+      <DependentUpon>FormVendedoresAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendedores\FormVendedoresMain.resx">
+      <DependentUpon>FormVendedoresMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendedores\FormVendedoresModificar.resx">
+      <DependentUpon>FormVendedoresModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVentas\FormVentasAgregar.resx">
       <DependentUpon>FormVentasAgregar.cs</DependentUpon>
@@ -130,5 +211,6 @@
       <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,7 +3,9 @@ using DesktopUI;
 using System.Windows.Forms;
 using DesktopUI.FormClientes;
 using DesktopUI.FormVentas;
-
+using DesktopUI.FormVehiculos;
+using DesktopUI.FormAccesorios;
+using DesktopUI.FormVendedores;
 
 namespace DesktopUI
 {
@@ -52,10 +54,9 @@ namespace DesktopUI
         /*
          * Eventos de click
          */
-
         private void BtAccessorios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Form());
+            AbrirFormulario(new FormAccesoriosMain());
         }
 
         private void BtClientes_Click(object sender, EventArgs e)
@@ -67,12 +68,12 @@ namespace DesktopUI
 
         private void BtVehiculos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Form());
+            AbrirFormulario(new FormVehiculosMain());
         }
 
         private void BtVendedores_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Form());
+            AbrirFormulario(new FormVendedoresMain());
         }
 
         private void BtVentas_Click(object sender, EventArgs e)
