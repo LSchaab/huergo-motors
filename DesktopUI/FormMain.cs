@@ -1,6 +1,9 @@
 ﻿using System;
 using DesktopUI;
 using System.Windows.Forms;
+using DesktopUI.FormClientes;
+using DesktopUI.FormVentas;
+
 
 namespace DesktopUI
 {
@@ -57,7 +60,9 @@ namespace DesktopUI
 
         private void BtClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Form());
+            FormClientesMain form = new FormClientesMain();
+            form.EsconderBtSeleccionar();
+            AbrirFormulario(form);
         }
 
         private void BtVehiculos_Click(object sender, EventArgs e)
@@ -72,7 +77,7 @@ namespace DesktopUI
 
         private void BtVentas_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Form());
+            AbrirFormulario(new FormVentasMain());
         }
 
         private void BtCerrarFormulario_Click(object sender, EventArgs e)

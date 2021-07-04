@@ -44,17 +44,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormClientes\FormClientesAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientes\FormClientesAgregar.Designer.cs">
+      <DependentUpon>FormClientesAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientes\FormClientesMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientes\FormClientesMain.Designer.cs">
+      <DependentUpon>FormClientesMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientes\FormClientesModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientes\FormClientesModificar.Designer.cs">
+      <DependentUpon>FormClientesModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVentas\FormVentasAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVentas\FormVentasAgregar.Designer.cs">
+      <DependentUpon>FormVentasAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVentas\FormVentasMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVentas\FormVentasMain.Designer.cs">
+      <DependentUpon>FormVentasMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UiHelper.cs" />
+    <EmbeddedResource Include="FormClientes\FormClientesAgregar.resx">
+      <DependentUpon>FormClientesAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientes\FormClientesMain.resx">
+      <DependentUpon>FormClientesMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientes\FormClientesModificar.resx">
+      <DependentUpon>FormClientesModificar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVentas\FormVentasAgregar.resx">
+      <DependentUpon>FormVentasAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVentas\FormVentasMain.resx">
+      <DependentUpon>FormVentasMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
