@@ -20,7 +20,9 @@ La base de datos a la que se conecta está creada sobre SQL Server.
 
 ### Versión de escritorio
 
-(foto)
+![home](https://github.com/galobponce/huergo-motors/blob/main/assets/home.png)
+
+![clientes](https://github.com/galobponce/huergo-motors/blob/main/assets/clientes.png)
 
 ### Versión web
 
